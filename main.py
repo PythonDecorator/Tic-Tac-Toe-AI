@@ -1,4 +1,6 @@
+import os
 import random
+import sys
 from itertools import combinations
 import customtkinter as ctk
 from PIL import Image
@@ -27,7 +29,7 @@ class App(ctk.CTk):
     def __init__(self):
         super().__init__(fg_color=BG_MAIN_COLOR)
         self.title(" Amos' Tic Tac Toe")
-        self.iconbitmap("files/images/logo.ico")
+        self.iconbitmap(self.resource_path("files/images/logo.ico"))
         self.resizable(False, False)
         app_width = 550
         app_height = 600
@@ -39,7 +41,7 @@ class App(ctk.CTk):
 
         # MUSIC
         pygame.init()
-        self.bg_music = pygame.mixer.Sound("files/sound/bg_music.mp3")
+        self.bg_music = pygame.mixer.Sound(self.resource_path("files/sound/bg_music.mp3"))
         self.bg_music.set_volume(0.5)
         self.bg_music.play(loops=-1)
 
@@ -92,8 +94,8 @@ class App(ctk.CTk):
         Lines(self)
 
         # IMAGE
-        image_o = Image.open("files/images/o.png")
-        image_x = Image.open("files/images/x.png")
+        image_o = Image.open(self.resource_path("files/images/o.png"))
+        image_x = Image.open(self.resource_path("files/images/x.png"))
         self.ctk_img_o = ctk.CTkImage(dark_image=image_o, light_image=image_o, size=(80, 84))
         self.ctk_img_x = ctk.CTkImage(dark_image=image_x, light_image=image_x, size=(89, 87))
 
@@ -242,6 +244,11 @@ class App(ctk.CTk):
         else:
             button.grid(column=box_number - 7, row=2, sticky="news", padx=20, pady=30)
         self.button_list.append(button)
+
+    def resource_path(self, relative_path):
+        """ Get absolute path to resource, works for dev and for PyInstaller """
+        base_path = getattr(sys, '_MEIPASS', os.path.dirname(os.path.abspath(__file__)))
+        return os.path.join(base_path, relative_path)
 
 
 class Lines(ctk.CTkCanvas):
