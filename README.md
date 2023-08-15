@@ -1,17 +1,18 @@
-# [Tic Tac Toe AI: A Modern Tic Tac Toe Game using Customtkinter](https://github.com/PythonDecorator)
+# [Tic Tac Toe AI: A Modern Tic Tac Toe Game](https://github.com/PythonDecorator)
 
 <br />
 
 ![version](https://img.shields.io/badge/version-1.0.0-blue.svg)
 
 --- 
-
+![tic tac toe thumbnail.png](demo%2Ftic%20tac%20toe%20thumbnail.png)
 ## Table of Contents
 
 * [Overview](#overview)
 * [Demo](#demo)
 * [Documentation](#documentation)
 * [Features](#features)
+* [Flow Chart](#flow-chart)
 * [Converting to Executable](#converting-to-executable)
 * [Controls](#Controls)
 * [Licensing](#license)
@@ -24,54 +25,55 @@
 
 ## Overview
 
-The "Tic Tac Toe " project aims to bring the classic game of Tic Tac Toe to life as a desktop application using the
-CustomTkinter library in Python.
+This "Tic Tac Toe " project brings the classic game of Tic Tac Toe to life as a desktop application using the
+in Python.
 
-In this project I have created a user-friendly and visually appealing interface for playing Tic Tac Toe against another
-player or against the computer with AI.
+In this project I have created a user-friendly and visually appealing interface for playing Tic Tac Toe against 
+the computer with AI.
 
-I have only implemented the AI logic to block the user from winning on the third move to make the game easier, In the
-next version of this game, I will add the difficulty choice and implementations.
 
 <br />
 
 ## Demo
+![Tic Tac Toe Demo.gif](demo%2FTic%20Tac%20Toe%20Demo.gif)
 
-![demo-blog.gif](apps/static/assets/demo/demo-blog.gif)
-
-- **Download the One file .exe file from the dist or download folder**
+- **Download the One file .exe file from the dist folder**
 - **You don't need to install anything, just download, click and start playing.**
 
 <br />
 
 ## Features
 
-> Features
+> Some main features
 
 1. ✅ `Interactive Game Board`: Interactive game board with a 3x3 grid using buttons that respond to player clicks for
    placing X and O markers.
 
-2. ✅ `Winning Conditions`: Implement the logic to check for winning combinations (horizontal, vertical, and diagonal)
+2. ✅ `Winning Conditions`: Implemented logic to check for winning combinations (horizontal, vertical, and diagonal)
    and declare a winner when a player completes a line of their markers.
 
-3. ✅ `Tie Detection`: Detect a tie or draw scenario when the game board is completely filled, and no player has won.
+3. ✅ `Tie Detection`: Detects a tie or draw scenario when the game board is completely filled, and no player has won.
 
-4. ✅ `Restart and Reset`: Provide options to restart the game after a match is completed or to reset the game board
-   without changing the player's turn.
+4. ✅ `Restart and Reset`: Provided options to restart the game after a match is completed or to reset the game board.
 
-5. ✅ `Visual Feedback`: Enhance user experience by visually highlighting the winning line and displaying clear messages
-   for different game outcomes.
+5. ✅ `Visual Feedback`: Enhanced user experience by displaying clear messages for different game outcomes.
 
 6. ✅ `Score Tracking`: Keep track of each player's wins, losses, and ties throughout multiple game sessions.
 
-7. ✅ `Responsive Design`: Ensure that the game interface is responsive and visually appealing on different screen sizes
+7. ✅ `Responsive Design`: Ensures that the game interface is responsive and visually appealing on different screen sizes
    and resolutions.
 
 <br />
 
+## Flow Chart
+![Tic Tac Toe Flow.png](files%2Fflow%20chart%2FTic%20Tac%20Toe%20Flow.png)
+
+<br />
+
+
 ## Documentation
 
-This game was built based on the Pygame documentation
+This game was built based on the customtkinter and Pygame documentation
 
 <br /> 
 
@@ -124,13 +126,19 @@ $ pyinstaller main.spec
 
 This project is licensed under the MIT license. See also the attached LICENSE file.
 
+<br />
+
 ## Reporting Issues
 
 GitHub Issues is the official bug tracker for the Tic Tac Toe.
 
+<br />
+
 ## Technical Support or Questions
 
-If you have questions contact me [okpeamos.ao@gmail.com]() instead of opening an issue.
+If you have questions contact me okpeamos.ao@gmail.cominstead of opening an issue.
+
+<br />
 
 ## For Open Source
 
@@ -139,6 +147,8 @@ development. This project allows you to explore the mechanics of a classic game,
 opponents, and design an appealing user interface. Whether you're aiming to build a portfolio project or simply enjoy
 creating an entertaining game, this project offers a rewarding experience that combines coding prowess with a touch of
 nostalgia.
+
+<br />
 
 ## Social Media
 
